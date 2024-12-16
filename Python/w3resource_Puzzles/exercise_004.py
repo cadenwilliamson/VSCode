@@ -22,6 +22,8 @@
     
     Click me to see the sample solution
     https://www.w3resource.com/python-exercises/puzzles/python-programming-puzzles-4.php
+
+    LOOKED AT SOLUTION ):
 """
 
 num_1 = 2
@@ -29,26 +31,14 @@ num_2 = 10
 num_3 = 3
 num_4 = 17
 
-def Stones(InputNumber : int):
-    stonePiles = [InputNumber]
-    numOfPiles = InputNumber
-
-    if InputNumber % 2 == 0:
-        print(
-            f"{InputNumber} = Even\n"
-            f"{"All piles contain an Even amount of stones:\n"}"
-        )
-    elif InputNumber % 2 != 0:
-        print(
-            f"{InputNumber} = Odd\n"
-            f"{"All piles contain an Odd amount of stones:\n"}"
-        )    
+def StonePiles(InputNumber : int):
     
-    print(stonePiles, "\n")
+    output = [InputNumber + 2 * i for i in range(InputNumber)]
 
-    return
+    print(f"Number of Piles: {InputNumber}")
+    print(f"Pile Distro:\n{output}\n")
 
-Stones(num_1)
-Stones(num_2)
-Stones(num_3)
-Stones(num_4)
+StonePiles(num_1)
+StonePiles(num_2)
+StonePiles(num_3)
+StonePiles(num_4)
