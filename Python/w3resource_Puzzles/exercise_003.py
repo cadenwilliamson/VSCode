@@ -50,30 +50,27 @@ num_3 = 854
 num_4 = 765
 
 def GreaterThanFunc(InputNumber : int):
-    modValue = 4 % 34 ## Gives value for 4 mod 34 (4)
-    fourPower = 4 ** 4 ## Gives value of 4 to the power of 4 (256)
-    sep = "-" * 50 ## Just separates text, nothing crazy
+    fourPower = 4 ** 4 # = 256
     inputModValue = InputNumber % 34
-
+    sep = "-" * 50 ## Just separates text, nothing crazy
 
     print(sep) ## Prints separater for text readability
-    
+
     print(
-        f"Input Number: {InputNumber}\n"
-        f"4 % 34 = {modValue}\n"
-        f"4^4 = 4*4*4*4 = {fourPower}\n",
-        f"{InputNumber} % 34 = {inputModValue}"
+        f"Input Value: {InputNumber}\n"
+        "4 ** 4 = 256\n"
+        f"{InputNumber} % 34 = {inputModValue}\n"
+    )
+
+    if InputNumber > fourPower and inputModValue == 4:
+        print(
+            f"{InputNumber} is 'Greater Than' 4 ** 4 = 256.\n"
+            f"{InputNumber}, when 'n%34' is applied, is equal to 4."
         )
-
-    if InputNumber > fourPower:
-        print(f"{InputNumber} > {fourPower}")
         return True
-
-    if inputModValue == 4:
-        print("")
-
-    return
-
+    else:
+        print("The given number does not meet the required criteria.")
+        return False
 
 
 GreaterThanFunc(num_1)
