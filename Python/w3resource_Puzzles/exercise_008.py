@@ -31,23 +31,35 @@ def StringSplitter(inputString : str):
     
     """
         The beef of this function is here.
-        This function takes the re(regex) library, and uses it to split the strings into lists.
+        This function takes the re(regex) module, and uses it to split the strings into lists.
         
-        First, an 'r' is used to signify that what is within the following string is using
-        regex. Then, a regex formula is surrounded by parenthases(). This isolates the action,
-        and basically takes each thing that it finds in the given string that meets the criteria
-        of the regex expression, and makes it it's own item in the list.
-        
-        The regex formula used is '([ ,]+)'
+        The regex formula used is 'r"([ ,]+)"'
         
         Breakdown:
-        
+        r = Prefix that marks the string as a "raw string".
+            -"\" are treated literally.
+        ( .. ) = Capturing Group, grouping each occurence of the regex.
+        [] = Defines a "Character Class". "One of" the included expression.
+        " ," = This is what the regex is looking for. Both a space, and a comma
+        + = Looks for one, or more, space or comma, of the previous pattern.
     """
     splitList = re.split(r"([ ,]+)", inputString)
     
     print(sep)
     print(f"Input String:\n{inputString}\n")
     print("Seperated Words List:")
+    
+    """
+        Breakdown:
+        Creating a list with two sublists using the "splitList" variable.
+        
+        [] = Meaning "list"
+        splitList = The output of the variable "splitList"
+        [::2] = Creating the sublist using "slicing syntax" [start:stop:step]. 
+            Blank spaces indicate the defaults, both beginning and end of the list.
+            The ":2" takes every second element, starting at 0.
+        [1::2] = Similar to the previous slicing, but starts at the 1st index (second element)
+    """
     print([splitList[::2]], "\n") 
     print("Seperated Punctuation List:")
     print([splitList[1::2]], "\n")
