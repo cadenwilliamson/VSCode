@@ -43,7 +43,7 @@ int main() {
 
     // Boolean Value
     bool student = false;
-    bool ppower = true;
+    bool power = true;
     bool forSale = true;
 
 

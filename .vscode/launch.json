@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/willcj2/Documents/VSCode/C++/Exercises/CPP_Course/002-Constants",
-      "program": "c:/Users/willcj2/Documents/VSCode/C++/Exercises/CPP_Course/002-Constants/build/Debug/outDebug",
+      "cwd": "c:/Users/willcj2/Documents/VSCode/C++/Exercises/CPP_Course/001-Variables",
+      "program": "c:/Users/willcj2/Documents/VSCode/C++/Exercises/CPP_Course/001-Variables/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

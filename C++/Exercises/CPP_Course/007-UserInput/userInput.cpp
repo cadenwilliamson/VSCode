@@ -6,7 +6,47 @@
 // cin >> (Extraction Operator)
     // Character Input
 
-int UserInput() {
+
+// int UserInputBAD() {
+//     std::string name;
+
+//     std::cout << "What's your name?: "
+//     std::cin >> name;
+
+//     std::cout << "Hello " << name << "!\n";
+
+//     return 0;
+// }
+
+// int UserInputOK() {
+//     std::string name;
+
+//     std::cout << "What's your name?: ";
+//     std::getline(std::cin >> std::ws, name);
+
+//     std::cout << "Hello " << name << "!\n";
+
+//     return 0;
+// }
+
+// int UserInputBETTER() {
+//     std::string name = "Bob Bob";
+//     int age = 24;
+
+
+//     std::cout << "What's your age?: ";
+//     std::cin >> age;
+
+//     std::cout << "What's your name?: ";
+//     std::getline(std::cin, name);
+
+//     std::cout << "Hello " << name << "!\n";
+//     std::cout << "You're " << age << " years old!\n";
+
+//     return 0;
+// }
+
+int UserInputFULL() {
     std::string name;
     int age;
 
@@ -15,17 +55,19 @@ int UserInput() {
 
     std::cout << "What's your full name?: ";
     std::getline(std::cin >> std::ws, name);
-    //TODO EXPLAIN WHY `getline` IS USED HERE
 
-
-    std::cout << "Hello " << name << "!" << std::endl;
-    std::cout << "You're " << age << " years old!";
+    std::cout << "\nHello " << name << "!\n";
+    std::cout << "You're " << age << " years old!\n";
 
     return 0;
 }
 
+
 int main() {
-    UserInput();
+    // UserInputBAD();
+    // UserInputOK();
+    // UserInputBETTER();
+    UserInputFULL();
 
     return 0;
 }
