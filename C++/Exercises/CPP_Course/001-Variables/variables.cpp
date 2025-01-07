@@ -58,7 +58,5 @@ int main() {
     
     string greeting = "Hello";
     
-
-
     return 0;
 }
