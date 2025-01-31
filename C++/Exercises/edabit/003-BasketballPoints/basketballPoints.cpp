@@ -1,6 +1,14 @@
-int points_01 = (1, 1);
-int points_02 = (1, 2);
-int points_03 = (2, 1);
-int points_04 = (2, 2);
-int points_05 = (69, 420);
+#include <iostream>
 
+int square(int a) {
+    std::cout << a * a << std::endl;
+    return 0;
+}
+
+int main() {
+    square(8);
+    square(12);
+    square(534);
+    square(39);
+    return 0;
+}
