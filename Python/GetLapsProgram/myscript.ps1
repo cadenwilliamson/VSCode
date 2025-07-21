@@ -1,0 +1,2 @@
+Write-Host "Running PowerShell script..."
+Get-Process | Select-Object -First 5-NoProfile -ExecutionPolicy Bypass -Command "Get-LapsADPassword -AsPlainText -Identity %input% | ForEach-Object { Write-Output ('ComputerName: ' + $_.ComputerName); Write-Output ('Password: ' + $_.Password) }"
