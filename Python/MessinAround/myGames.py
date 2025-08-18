@@ -34,6 +34,3 @@ def RandomNumberGame():
             print(f"Nope! Try a lower number!")
         elif userInput_guess < randNumber:
             print(f"Nope! Try a higher number!")
-
-def Foobar():
-    
