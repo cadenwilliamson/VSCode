@@ -1,8 +1,6 @@
 from rich import print
 from time import sleep
 
-colors = ["red", "green", "blue", "yellow", "magenta", "cyan"]
-
 for i in range(0, 3):
     print("[red] Hello Pride!")
     print("[green] Hello Pride!")
@@ -11,4 +9,4 @@ for i in range(0, 3):
     print("[magenta] Hello Pride!")
     print("[cyan] Hello Pride!")
     
-    sleep(0.5)
+    sleep(0.25)
