@@ -5,14 +5,14 @@
 def RandomNumberGame():
     import random as r
     
-    ##NOTE - Generates a random number between the given values.
+    # Generates a random number between the given values.
     rand_num_100 = r.randint(1, 101)     # Range between 1 and 100
     rand_num_50 = r.randint(1, 51)       # Range between 1 and 50
     
-    ##NOTE - Asks user which gamemade they want to play.
+    # Asks user which gamemade they want to play.
     userInput_gamemode = int(input("Press 1 to guess between 1 and 100\nPress 2 to guess between 1 and 50\n"))
     
-    ##NOTE - Determins which gamemode was selected.
+    # Determins which gamemode was selected.
     if userInput_gamemode == 1:
         randNumber = rand_num_100
         gamechoice = "Guess a number between 1 and 100!\n"
@@ -20,10 +20,10 @@ def RandomNumberGame():
         randNumber = rand_num_50
         gamechoice = "Guess a number between 1 and 50!\n"
     
-    ##NOTE - Displays the game start message
+    # Displays the game start message
     print(gamechoice, "\n")
     
-    ##NOTE - Main Game loop
+    # Main Game loop
     while True:
         userInput_guess = int(input("Guess a Number: "))
         
